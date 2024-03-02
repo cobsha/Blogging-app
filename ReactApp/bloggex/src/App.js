@@ -17,7 +17,7 @@ import BlogPage from "./mycomponents/BlogPage";
 function App() {
   const [posts, setPosts] = useState([]);
    useEffect(() => {
-      fetch('http://localhost:8585/api/v1/post/all')
+      fetch('http://api.alphabite.in:8585/api/v1/post/all')
          .then((response) => response.json())
          .then((data) => {
             // console.log(data);
